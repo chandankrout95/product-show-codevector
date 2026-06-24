@@ -1,0 +1,23 @@
+{
+  "name": "product-browser-backend",
+  "version": "1.0.0",
+  "description": "Scalable product browser API with cursor-based pagination",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "seed": "node scripts/seed.js",
+    "simulate-writes": "node scripts/simulateConcurrentWrites.js",
+    "test": "node --test test/paginationCorrectness.test.js"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.1",
+    "mongoose": "^8.9.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
